@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+ </head>
+  <body>
+    <h1>Tip calculator</h1>
+    <main class="container">
+      <div class="calculator">
+        <div style="position: relative">
+          <label for="bill">Bill</label>
+          <input
+            type="number"
+            name=""
+            id="bill"
+            class="standard billInput"
+            min="1"
+            placeholder="0"
+            required
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon"
+          >
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+          </svg>
+        </div>
+        <div class="options">
+          <button class="btn" data-percent="5">5%</button>
+          <button class="btn" data-percent="10">10%</button>
+          <button class="btn" data-percent="15">15%</button>
+          <button class="btn" data-percent="25">25%</button>
+          <button class="btn" data-percent="50">50%</button>
+          <input type="number" name="" placeholder="Custom" class="custom" />
+        </div>
+        <div>
+          <label for="people">Number of People </label>
+          <input
+            type="number"
+            name=""
+            id="people"
+            class="standard"
+            min="1"
+            required
+            placeholder="1"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon"
+          >
+            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="8.5" cy="7" r="4"></circle>
+            <line x1="20" y1="8" x2="20" y2="14"></line>
+            <line x1="23" y1="11" x2="17" y2="11"></line>
+          </svg>
+        </div>
+      </div>
+      <div class="results-container">
+        <div class="results-item">
+          <div>
+            <p>Tip </p>
+            <small>Person</small>
+          </div>
+          <span id="tip">$0.00</span>
+        </div>
+        <div class="results-item">
+          <div>
+            <p>Tip Amount</p>
+            <small>Persons</small>
+          </div>
+          <span id="total">$0.00</span>
+        </div>
+
+
+
+        <div class="results-item">
+        <div>
+          <p>Amount</p>
+          <small>Total</small>
+        </div>
+        <span id="totalAmount">$0.00</span>
+      </div>
+
+        <button class="reset">Reset</button>
+      </div>
+
+      
+    </main>
+
+
+
+  <footer class="footer">
+    <p class="footer__title">N.A.N.A
+    </p>
+
+    
+<div class="footer__social">
+  <a href="https://github.com/NanaShveli" target="_blank" class="footer__icon">
+    <p class="fab fa-github"></i>
+    <span>github</span>
+  </a>
+</div>
+
+    <p>&#169; 2023 copyright all rights reserved</p>
+  </footer>
+  <button onclick="topFunction()" id="myBtn">
+    <i class="bx bx-up-arrow-alt"></i>
+  </button>
+  <script type="text/javascript" src="assets/main.js"></script>
+  <!--GSAP-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="assets/gsap.js"></script>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
